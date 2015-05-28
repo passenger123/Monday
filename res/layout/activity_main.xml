@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"	
+	android:id="@+id/main_menu_layout0"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_centerVertical="true"
+    android:gravity="center" 
+    android:background="@color/backgroud"    
+    <LinearLayout
+	android:id="@+id/main_menu_layout"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:gravity="center" 
+    android:background="@color/background"
+    >
+	<TextView
+		android:id="@+main_menu_id/startGame"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="160px"  
+	    android:textSize="28px"
+	    android:gravity="center" 
+	    android:layout_gravity ="center" 
+	    android:text="开始游戏" 
+	    android:background="@color/background"
+	    />
+	 <TextView
+		android:id="@+main_menu_id/setBackground"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="160px"   
+	    android:gravity="center" 
+	    android:layout_gravity ="center" 
+	    android:textSize="28px"
+	    android:text="设置图片" 
+	    android:background="@color/background"
+	    />
+	    </LinearLayout>  	
+</LinearLayout>
