@@ -17,30 +17,45 @@ public class First extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_first);
+        
         bt = (Button) findViewById(R.id.selfinfo);
         sg = (Button) findViewById(R.id.startgame);
         bt.setOnClickListener(new View.OnClickListener() {
-            @Override
+           @Override
             public void onClick(View v) {
                 showToast();
             }
         });
-    }
+        sg.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+   		 Intent intent = new Intent();
+   		 intent.setClass(First.this,thegame.class);
+   		 First.this.startActivity(intent);
+        }
+    });
+   
+        }
+    
 
     private void showToast(){
     	
-    	 Toast toast=Toast.makeText(getApplicationContext(), "this is a test!", Toast.LENGTH_SHORT); 
+    	 Toast toast=Toast.makeText(getApplicationContext(), "Passenger's First App! Easy but hard.", Toast.LENGTH_SHORT); 
          toast.show(); 
          
     }
-     abstract class MyButtonListener implements OnClickListener{
+      abstract class MyButtonListener implements OnClickListener{
     	 
     	 public void onClick(View v){
     		 //TODO Auto-generated method stub
     		 Intent intent = new Intent();
     		 intent.setClass(First.this,thegame.class);
+    		 First.this.startActivity(intent);
     		  
+    		   
     	 }
+
+		
      }
    
 
@@ -52,3 +67,4 @@ public class First extends Activity {
     }
     
 }
+

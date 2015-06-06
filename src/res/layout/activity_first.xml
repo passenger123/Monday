@@ -19,11 +19,10 @@
 	    />
 	
     <Button
-         android:id="@+id/startgame"
+        android:id="@+id/startgame"
 	    android:layout_width="fill_parent" 
 	    android:layout_height="wrap_content"
-	    android:gravity="center" 
-	    
+	    android:gravity="center" 	    
 	    android:text="开始游戏"
         android:textSize="40sp"
 	    />	
