@@ -1,98 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
-<AbsoluteLayout 
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"	
-	android:id="@+id/main_menu_layout0"
+	android:id="@+id/main_menu_layout"
+	android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    
      > 
+
      <TextView
          android:id="@+id/Text"
-         android:layout_width="270px"
-         android:layout_height="40px"
-         android:text="猜猜红心A是哪一张"
+         android:layout_width="fill_parent"
+         android:text="猜猜'红心A'是哪一张"
          android:textSize="18sp"
-         android:layout_x="20sp"
-         >
          
+         >   
      </TextView>
-    <ImageView
+   
+    <ImageView
         android:id="@+id/mImage01"
         android:layout_width="71px"
         android:layout_height="96px"
-        android:layout_x="14px"
-        android:layout_y="60px"
         android:src="@drawable/p02" />
 
     <ImageView
         android:id="@+id/mImage02"
         android:layout_width="71px"
         android:layout_height="96px"
-        android:layout_x="128px"
-        android:layout_y="60px" 
         android:src="@drawable/p03"/>
 
     <ImageView
         android:id="@+id/mImage09"
         android:layout_width="71px"
         android:layout_height="96px"
-        android:layout_x="232px"
-        android:layout_y="277px"
         android:src="@drawable/p11" />
+    
+
 
     <ImageView
         android:id="@+id/mImage08"
         android:layout_width="71px"
         android:layout_height="96px"
-        android:layout_x="128px"
-        android:layout_y="277px" 
+
         android:src="@drawable/p05"/>
 
     <ImageView
         android:id="@+id/mImage06"
         android:layout_width="71px"
         android:layout_height="96px"
-        android:layout_x="232px"
-        android:layout_y="170px" 
+
         android:src="@drawable/p06"/>
 
     <ImageView
         android:id="@+id/mImage07"
-        android:layout_width="69dp"
-        android:layout_height="94dp"
-        android:layout_x="14px"
-        android:layout_y="277px"
-        android:src="@drawable/p07" />
+        android:layout_width="71px"
+        android:layout_height="96px"
 
+        android:src="@drawable/p07" />
+    
     <ImageView
         android:id="@+id/mImage05"
         android:layout_width="71px"
         android:layout_height="96px"
-        android:layout_x="128px"
-        android:layout_y="170px" 
+
         android:src="@drawable/p08"/>
 
     <ImageView
         android:id="@+id/mImage03"
         android:layout_width="71px"
         android:layout_height="96px"
-        android:layout_x="232px"
-        android:layout_y="60px" 
+
         android:src="@drawable/p09"/>
 
     <ImageView
         android:id="@+id/mImage04"
         android:layout_width="71px"
         android:layout_height="96px"
-        android:layout_x="14px"
-        android:layout_y="170px" 
+
         android:src="@drawable/p10"/>
+    
 
     <Button
         android:id="@+id/mButton"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_x="100dp"
-        android:layout_y="358dp"
-        android:text="重新玩一次" />
 
-  </AbsoluteLayout>
+        android:text="重玩一次" />
+   	<TextView
+         android:id="@+id/mScore"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:gravity="center"
+         android:text="sdasd"
+         android:textSize="18sp"
+         
+         >
+         
+     </TextView>
+
+</LinearLayout>
